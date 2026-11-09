@@ -1,0 +1,447 @@
+[
+  {
+    "id": "keycap",
+    "name": "Mechanical keycap",
+    "trayFrame": "keycap_a",
+    "pileFrames": [
+      "keycap_a",
+      "keycap_b",
+      "keycap_c"
+    ]
+  },
+  {
+    "id": "rgb_mouse",
+    "name": "RGB mouse",
+    "trayFrame": "rgb_mouse_a",
+    "pileFrames": [
+      "rgb_mouse_a",
+      "rgb_mouse_b",
+      "rgb_mouse_c"
+    ]
+  },
+  {
+    "id": "headset",
+    "name": "Headset",
+    "trayFrame": "headset_a",
+    "pileFrames": [
+      "headset_a",
+      "headset_b",
+      "headset_c"
+    ]
+  },
+  {
+    "id": "energy_can",
+    "name": "Energy drink can",
+    "trayFrame": "energy_can_a",
+    "pileFrames": [
+      "energy_can_a",
+      "energy_can_b",
+      "energy_can_c"
+    ]
+  },
+  {
+    "id": "handheld_console",
+    "name": "Handheld console",
+    "trayFrame": "handheld_console_a",
+    "pileFrames": [
+      "handheld_console_a",
+      "handheld_console_b",
+      "handheld_console_c"
+    ]
+  },
+  {
+    "id": "smartphone",
+    "name": "Smartphone",
+    "trayFrame": "smartphone_a",
+    "pileFrames": [
+      "smartphone_a",
+      "smartphone_b",
+      "smartphone_c"
+    ]
+  },
+  {
+    "id": "wifi_router",
+    "name": "Wi-Fi router",
+    "trayFrame": "wifi_router_a",
+    "pileFrames": [
+      "wifi_router_a",
+      "wifi_router_b",
+      "wifi_router_c"
+    ]
+  },
+  {
+    "id": "usb_drive",
+    "name": "USB flash drive",
+    "trayFrame": "usb_drive_a",
+    "pileFrames": [
+      "usb_drive_a",
+      "usb_drive_b",
+      "usb_drive_c"
+    ]
+  },
+  {
+    "id": "controller",
+    "name": "Game controller",
+    "trayFrame": "controller_a",
+    "pileFrames": [
+      "controller_a",
+      "controller_b",
+      "controller_c"
+    ]
+  },
+  {
+    "id": "snack_bar",
+    "name": "Energy snack bar",
+    "trayFrame": "snack_bar_a",
+    "pileFrames": [
+      "snack_bar_a",
+      "snack_bar_b",
+      "snack_bar_c"
+    ]
+  },
+  {
+    "id": "microphone",
+    "name": "Microphone",
+    "trayFrame": "microphone_a",
+    "pileFrames": [
+      "microphone_a",
+      "microphone_b",
+      "microphone_c"
+    ]
+  },
+  {
+    "id": "vr_headset",
+    "name": "VR headset",
+    "trayFrame": "vr_headset_a",
+    "pileFrames": [
+      "vr_headset_a",
+      "vr_headset_b",
+      "vr_headset_c"
+    ]
+  },
+  {
+    "id": "pizza_slice",
+    "name": "Pepperoni pizza slice",
+    "trayFrame": "pizza_slice_a",
+    "pileFrames": [
+      "pizza_slice_a",
+      "pizza_slice_b",
+      "pizza_slice_c"
+    ]
+  },
+  {
+    "id": "smash_burger",
+    "name": "Smash burger",
+    "trayFrame": "smash_burger_a",
+    "pileFrames": [
+      "smash_burger_a",
+      "smash_burger_b",
+      "smash_burger_c"
+    ]
+  },
+  {
+    "id": "fries_carton",
+    "name": "Cartoned fries",
+    "trayFrame": "fries_carton_a",
+    "pileFrames": [
+      "fries_carton_a",
+      "fries_carton_b",
+      "fries_carton_c",
+      "fries_carton_d"
+    ]
+  },
+  {
+    "id": "boba_tea",
+    "name": "Boba tea",
+    "trayFrame": "boba_tea_a",
+    "pileFrames": [
+      "boba_tea_a",
+      "boba_tea_b",
+      "boba_tea_c"
+    ]
+  },
+  {
+    "id": "soft_serve_cone",
+    "name": "Soft-serve cone",
+    "trayFrame": "soft_serve_cone_a",
+    "pileFrames": [
+      "soft_serve_cone_a",
+      "soft_serve_cone_b",
+      "soft_serve_cone_c"
+    ]
+  },
+  {
+    "id": "glazed_donut",
+    "name": "Glazed donut",
+    "trayFrame": "glazed_donut_a",
+    "pileFrames": [
+      "glazed_donut_a",
+      "glazed_donut_b",
+      "glazed_donut_c"
+    ]
+  },
+  {
+    "id": "hot_dog",
+    "name": "Hot dog",
+    "trayFrame": "hot_dog_a",
+    "pileFrames": [
+      "hot_dog_a",
+      "hot_dog_b",
+      "hot_dog_c"
+    ]
+  },
+  {
+    "id": "taco",
+    "name": "Street taco",
+    "trayFrame": "taco_a",
+    "pileFrames": [
+      "taco_a",
+      "taco_b",
+      "taco_c"
+    ]
+  },
+  {
+    "id": "coffee_cup",
+    "name": "Takeout coffee cup",
+    "trayFrame": "coffee_cup_a",
+    "pileFrames": [
+      "coffee_cup_a",
+      "coffee_cup_b",
+      "coffee_cup_c"
+    ]
+  },
+  {
+    "id": "pretzel",
+    "name": "Bavarian pretzel",
+    "trayFrame": "pretzel_a",
+    "pileFrames": [
+      "pretzel_a",
+      "pretzel_b",
+      "pretzel_c"
+    ]
+  },
+  {
+    "id": "ice_pop",
+    "name": "Rocket ice pop",
+    "trayFrame": "ice_pop_a",
+    "pileFrames": [
+      "ice_pop_a",
+      "ice_pop_b",
+      "ice_pop_c"
+    ]
+  },
+  {
+    "id": "noodle_box",
+    "name": "Takeout noodle box",
+    "trayFrame": "noodle_box_a",
+    "pileFrames": [
+      "noodle_box_a",
+      "noodle_box_b",
+      "noodle_box_c"
+    ]
+  },
+  {
+    "id": "waffle",
+    "name": "Belgian waffle",
+    "trayFrame": "waffle_a",
+    "pileFrames": [
+      "waffle_a",
+      "waffle_b",
+      "waffle_c"
+    ]
+  },
+  {
+    "id": "sushi_roll",
+    "name": "Salmon avocado maki roll",
+    "trayFrame": "sushi_roll_a",
+    "pileFrames": [
+      "sushi_roll_a",
+      "sushi_roll_b",
+      "sushi_roll_c"
+    ]
+  },
+  {
+    "id": "chicken_drumstick",
+    "name": "Crispy chicken drumstick",
+    "trayFrame": "chicken_drumstick_a",
+    "pileFrames": [
+      "chicken_drumstick_a",
+      "chicken_drumstick_b",
+      "chicken_drumstick_c"
+    ]
+  },
+  {
+    "id": "arcade_cherries",
+    "name": "Pixel Cherries",
+    "trayFrame": "arcade_cherries_a",
+    "pileFrames": [
+      "arcade_cherries_a",
+      "arcade_cherries_b",
+      "arcade_cherries_c",
+      "arcade_cherries_d"
+    ]
+  },
+  {
+    "id": "arcade_heart",
+    "name": "Pixel Heart",
+    "trayFrame": "arcade_heart_a",
+    "pileFrames": [
+      "arcade_heart_a",
+      "arcade_heart_b",
+      "arcade_heart_c",
+      "arcade_heart_d"
+    ]
+  },
+  {
+    "id": "arcade_ghost",
+    "name": "Arcade Ghost",
+    "trayFrame": "arcade_ghost_a",
+    "pileFrames": [
+      "arcade_ghost_a",
+      "arcade_ghost_b",
+      "arcade_ghost_c"
+    ]
+  },
+  {
+    "id": "arcade_joystick",
+    "name": "Arcade Joystick",
+    "trayFrame": "arcade_joystick_a",
+    "pileFrames": [
+      "arcade_joystick_a",
+      "arcade_joystick_b",
+      "arcade_joystick_c",
+      "arcade_joystick_d"
+    ]
+  },
+  {
+    "id": "arcade_coin",
+    "name": "Arcade Coin",
+    "trayFrame": "arcade_coin_a",
+    "pileFrames": [
+      "arcade_coin_a",
+      "arcade_coin_b",
+      "arcade_coin_c",
+      "arcade_coin_d"
+    ]
+  },
+  {
+    "id": "arcade_cartridge",
+    "name": "Arcade Cartridge",
+    "trayFrame": "arcade_cartridge_a",
+    "pileFrames": [
+      "arcade_cartridge_a",
+      "arcade_cartridge_b",
+      "arcade_cartridge_c",
+      "arcade_cartridge_d"
+    ]
+  },
+  {
+    "id": "arcade_button",
+    "name": "Arcade Button",
+    "trayFrame": "arcade_button_a",
+    "pileFrames": [
+      "arcade_button_a",
+      "arcade_button_b",
+      "arcade_button_c",
+      "arcade_button_d"
+    ]
+  },
+  {
+    "id": "arcade_cabinet",
+    "name": "Arcade Cabinet",
+    "trayFrame": "arcade_cabinet_a",
+    "pileFrames": [
+      "arcade_cabinet_a",
+      "arcade_cabinet_b",
+      "arcade_cabinet_c",
+      "arcade_cabinet_d"
+    ]
+  },
+  {
+    "id": "power_pill",
+    "name": "Power Pill",
+    "trayFrame": "power_pill_a",
+    "pileFrames": [
+      "power_pill_a",
+      "power_pill_b",
+      "power_pill_c"
+    ]
+  },
+  {
+    "id": "brick_game",
+    "name": "Brick Game",
+    "trayFrame": "brick_game_a",
+    "pileFrames": [
+      "brick_game_a",
+      "brick_game_b",
+      "brick_game_c",
+      "brick_game_d"
+    ]
+  },
+  {
+    "id": "cassette_tape",
+    "name": "Cassette Tape",
+    "trayFrame": "cassette_tape_a",
+    "pileFrames": [
+      "cassette_tape_a",
+      "cassette_tape_b",
+      "cassette_tape_c",
+      "cassette_tape_d"
+    ]
+  },
+  {
+    "id": "boombox",
+    "name": "Boombox",
+    "trayFrame": "boombox_a",
+    "pileFrames": [
+      "boombox_a",
+      "boombox_b",
+      "boombox_c",
+      "boombox_d"
+    ]
+  },
+  {
+    "id": "raygun",
+    "name": "Raygun",
+    "trayFrame": "raygun_a",
+    "pileFrames": [
+      "raygun_a",
+      "raygun_b",
+      "raygun_c",
+      "raygun_d"
+    ]
+  },
+  {
+    "id": "arcade_capsule",
+    "name": "Arcade Capsule",
+    "trayFrame": "arcade_capsule_a",
+    "pileFrames": [
+      "arcade_capsule_a",
+      "arcade_capsule_b",
+      "arcade_capsule_c",
+      "arcade_capsule_d"
+    ]
+  },
+  {
+    "id": "pixel_invader",
+    "name": "Pixel Invader",
+    "trayFrame": "pixel_invader_a",
+    "pileFrames": [
+      "pixel_invader_a",
+      "pixel_invader_b",
+      "pixel_invader_c",
+      "pixel_invader_d"
+    ]
+  },
+  {
+    "id": "neon_shades",
+    "name": "Neon Shades",
+    "trayFrame": "neon_shades_a",
+    "pileFrames": [
+      "neon_shades_a",
+      "neon_shades_b",
+      "neon_shades_c",
+      "neon_shades_d"
+    ]
+  }
+]

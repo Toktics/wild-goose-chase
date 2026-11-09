@@ -1,0 +1,58 @@
+{
+  "frame": {
+    "width": 512,
+    "height": 640
+  },
+  "sourceCanvas": {
+    "width": 1145,
+    "height": 1374
+  },
+  "sourceScale": {
+    "width": 458,
+    "height": 550,
+    "left": 27,
+    "top": 45
+  },
+  "pivot": {
+    "x": 256,
+    "y": 560
+  },
+  "openingRow": 329,
+  "frames": [
+    "egg-00-intact",
+    "egg-01-hairline",
+    "egg-02-deep-crack",
+    "egg-03-open"
+  ],
+  "pieces": [
+    "cap-rear",
+    "cap-front",
+    "bowl-rear",
+    "bowl-front"
+  ],
+  "layerOrder": [
+    "glow",
+    "cap-rear",
+    "bowl-rear",
+    "card",
+    "bowl-front",
+    "cap-front",
+    "particles"
+  ],
+  "notes": [
+    "Upper cap is also a matched pair: cap-rear behind card, cap-front in front. Both upper layers use IDENTICAL transform/opacity and move as one cap. Never independently centre or animate either half.",
+    "shell-cap is now legacy whole-cap reference only; do not draw it alongside cap-rear/cap-front.",
+    "Render bowl-rear BEHIND card and bowl-front IN FRONT of card, at exactly the same transform. Cap is separate above during lift.",
+    "Without a card, rear + front reconstruct the shared authored bowl within two byte levels on dark, white and magenta backgrounds.",
+    "Legacy shell-front is the complete bowl reference; do not use it as the new foreground occluder.",
+    "Use common 512x640 canvas and pivot for every frame; do not independently trim/recenter.",
+    "Shell pieces are separately authored transparent cutouts; do not slice the combined source, whose haze made an edge under motion.",
+    "Open frame is composed from the two final authored pieces at their registered positions.",
+    "Source PNGs may contain invisible RGB; use actual alpha when inspecting/compositing."
+  ],
+  "version": 3,
+  "legacyPieces": [
+    "shell-cap",
+    "shell-front"
+  ]
+}

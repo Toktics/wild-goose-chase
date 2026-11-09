@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "formats": "lossless WebP; no lossy compression",
+  "items": [
+    {
+      "id": "keycap",
+      "name": "Mechanical keycap",
+      "trayFrame": "keycap_a",
+      "pileFrames": [
+        "keycap_a",
+        "keycap_b",
+        "keycap_c"
+      ]
+    },
+    {
+      "id": "rgb_mouse",
+      "name": "RGB mouse",
+      "trayFrame": "rgb_mouse_a",
+      "pileFrames": [
+        "rgb_mouse_a",
+        "rgb_mouse_b",
+        "rgb_mouse_c"
+      ]
+    },
+    {
+      "id": "headset",
+      "name": "Headset",
+      "trayFrame": "headset_a",
+      "pileFrames": [
+        "headset_a",
+        "headset_b",
+        "headset_c"
+      ]
+    },
+    {
+      "id": "energy_can",
+      "name": "Energy drink can",
+      "trayFrame": "energy_can_a",
+      "pileFrames": [
+        "energy_can_a",
+        "energy_can_b",
+        "energy_can_c"
+      ]
+    },
+    {
+      "id": "handheld_console",
+      "name": "Handheld console",
+      "trayFrame": "handheld_console_a",
+      "pileFrames": [
+        "handheld_console_a",
+        "handheld_console_b",
+        "handheld_console_c"
+      ]
+    },
+    {
+      "id": "smartphone",
+      "name": "Smartphone",
+      "trayFrame": "smartphone_a",
+      "pileFrames": [
+        "smartphone_a",
+        "smartphone_b",
+        "smartphone_c"
+      ]
+    },
+    {
+      "id": "wifi_router",
+      "name": "Wi-Fi router",
+      "trayFrame": "wifi_router_a",
+      "pileFrames": [
+        "wifi_router_a",
+        "wifi_router_b",
+        "wifi_router_c"
+      ]
+    },
+    {
+      "id": "usb_drive",
+      "name": "USB flash drive",
+      "trayFrame": "usb_drive_a",
+      "pileFrames": [
+        "usb_drive_a",
+        "usb_drive_b",
+        "usb_drive_c"
+      ]
+    },
+    {
+      "id": "controller",
+      "name": "Game controller",
+      "trayFrame": "controller_a",
+      "pileFrames": [
+        "controller_a",
+        "controller_b",
+        "controller_c"
+      ]
+    },
+    {
+      "id": "snack_bar",
+      "name": "Energy snack bar",
+      "trayFrame": "snack_bar_a",
+      "pileFrames": [
+        "snack_bar_a",
+        "snack_bar_b",
+        "snack_bar_c"
+      ]
+    },
+    {
+      "id": "microphone",
+      "name": "Microphone",
+      "trayFrame": "microphone_a",
+      "pileFrames": [
+        "microphone_a",
+        "microphone_b",
+        "microphone_c"
+      ]
+    },
+    {
+      "id": "vr_headset",
+      "name": "VR headset",
+      "trayFrame": "vr_headset_a",
+      "pileFrames": [
+        "vr_headset_a",
+        "vr_headset_b",
+        "vr_headset_c"
+      ]
+    },
+    {
+      "id": "pizza_slice",
+      "name": "Pepperoni pizza slice",
+      "trayFrame": "pizza_slice_a",
+      "pileFrames": [
+        "pizza_slice_a",
+        "pizza_slice_b",
+        "pizza_slice_c"
+      ]
+    },
+    {
+      "id": "smash_burger",
+      "name": "Smash burger",
+      "trayFrame": "smash_burger_a",
+      "pileFrames": [
+        "smash_burger_a",
+        "smash_burger_b",
+        "smash_burger_c"
+      ]
+    },
+    {
+      "id": "fries_carton",
+      "name": "Cartoned fries",
+      "trayFrame": "fries_carton_a",
+      "pileFrames": [
+        "fries_carton_a",
+        "fries_carton_b",
+        "fries_carton_c",
+        "fries_carton_d"
+      ]
+    },
+    {
+      "id": "boba_tea",
+      "name": "Boba tea",
+      "trayFrame": "boba_tea_a",
+      "pileFrames": [
+        "boba_tea_a",
+        "boba_tea_b",
+        "boba_tea_c"
+      ]
+    },
+    {
+      "id": "soft_serve_cone",
+      "name": "Soft-serve cone",
+      "trayFrame": "soft_serve_cone_a",
+      "pileFrames": [
+        "soft_serve_cone_a",
+        "soft_serve_cone_b",
+        "soft_serve_cone_c"
+      ]
+    }
+  ],
+  "assets": {
+    "controller_a": {
+      "sprite512": {
+        "path": "sprites/controller_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 89550
+      },
+      "sprite256": {
+        "path": "sprites-mobile/controller_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 30664
+      }
+    },
+    "controller_b": {
+      "sprite512": {
+        "path": "sprites/controller_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 112214
+      },
+      "sprite256": {
+        "path": "sprites-mobile/controller_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 37274
+      }
+    },
+    "controller_c": {
+      "sprite512": {
+        "path": "sprites/controller_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 65862
+      },
+      "sprite256": {
+        "path": "sprites-mobile/controller_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 22996
+      }
+    },
+    "energy_can_a": {
+      "sprite512": {
+        "path": "sprites/energy_can_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 87192
+      },
+      "sprite256": {
+        "path": "sprites-mobile/energy_can_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 29124
+      }
+    },
+    "energy_can_b": {
+      "sprite512": {
+        "path": "sprites/energy_can_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 87400
+      },
+      "sprite256": {
+        "path": "sprites-mobile/energy_can_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 29282
+      }
+    },
+    "energy_can_c": {
+      "sprite512": {
+        "path": "sprites/energy_can_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 92368
+      },
+      "sprite256": {
+        "path": "sprites-mobile/energy_can_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 31394
+      }
+    },
+    "handheld_console_a": {
+      "sprite512": {
+        "path": "sprites/handheld_console_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 84824
+      },
+      "sprite256": {
+        "path": "sprites-mobile/handheld_console_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 29212
+      }
+    },
+    "handheld_console_b": {
+      "sprite512": {
+        "path": "sprites/handheld_console_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 112166
+      },
+      "sprite256": {
+        "path": "sprites-mobile/handheld_console_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 35642
+      }
+    },
+    "handheld_console_c": {
+      "sprite512": {
+        "path": "sprites/handheld_console_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 73460
+      },
+      "sprite256": {
+        "path": "sprites-mobile/handheld_console_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 24376
+      }
+    },
+    "headset_a": {
+      "sprite512": {
+        "path": "sprites/headset_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 99692
+      },
+      "sprite256": {
+        "path": "sprites-mobile/headset_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 35072
+      }
+    },
+    "headset_b": {
+      "sprite512": {
+        "path": "sprites/headset_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 83710
+      },
+      "sprite256": {
+        "path": "sprites-mobile/headset_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 30164
+      }
+    },
+    "headset_c": {
+      "sprite512": {
+        "path": "sprites/headset_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 92564
+      },
+      "sprite256": {
+        "path": "sprites-mobile/headset_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 31908
+      }
+    },
+    "keycap_a": {
+      "sprite512": {
+        "path": "sprites/keycap_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 107142
+      },
+      "sprite256": {
+        "path": "sprites-mobile/keycap_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 35584
+      }
+    },
+    "keycap_b": {
+      "sprite512": {
+        "path": "sprites/keycap_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 95650
+      },
+      "sprite256": {
+        "path": "sprites-mobile/keycap_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 30986
+      }
+    },
+    "keycap_c": {
+      "sprite512": {
+        "path": "sprites/keycap_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 77366
+      },
+      "sprite256": {
+        "path": "sprites-mobile/keycap_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 25496
+      }
+    },
+    "microphone_a": {
+      "sprite512": {
+        "path": "sprites/microphone_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 61876
+      },
+      "sprite256": {
+        "path": "sprites-mobile/microphone_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 20194
+      }
+    },
+    "microphone_b": {
+      "sprite512": {
+        "path": "sprites/microphone_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 92946
+      },
+      "sprite256": {
+        "path": "sprites-mobile/microphone_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 29584
+      }
+    },
+    "microphone_c": {
+      "sprite512": {
+        "path": "sprites/microphone_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 59262
+      },
+      "sprite256": {
+        "path": "sprites-mobile/microphone_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 19346
+      }
+    },
+    "rgb_mouse_a": {
+      "sprite512": {
+        "path": "sprites/rgb_mouse_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 84018
+      },
+      "sprite256": {
+        "path": "sprites-mobile/rgb_mouse_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 27942
+      }
+    },
+    "rgb_mouse_b": {
+      "sprite512": {
+        "path": "sprites/rgb_mouse_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 80764
+      },
+      "sprite256": {
+        "path": "sprites-mobile/rgb_mouse_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 26034
+      }
+    },
+    "rgb_mouse_c": {
+      "sprite512": {
+        "path": "sprites/rgb_mouse_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 54478
+      },
+      "sprite256": {
+        "path": "sprites-mobile/rgb_mouse_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 18654
+      }
+    },
+    "smartphone_a": {
+      "sprite512": {
+        "path": "sprites/smartphone_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 74012
+      },
+      "sprite256": {
+        "path": "sprites-mobile/smartphone_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 24670
+      }
+    },
+    "smartphone_b": {
+      "sprite512": {
+        "path": "sprites/smartphone_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 65806
+      },
+      "sprite256": {
+        "path": "sprites-mobile/smartphone_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 21600
+      }
+    },
+    "smartphone_c": {
+      "sprite512": {
+        "path": "sprites/smartphone_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 74026
+      },
+      "sprite256": {
+        "path": "sprites-mobile/smartphone_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 25408
+      }
+    },
+    "snack_bar_a": {
+      "sprite512": {
+        "path": "sprites/snack_bar_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 57536
+      },
+      "sprite256": {
+        "path": "sprites-mobile/snack_bar_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 20458
+      }
+    },
+    "snack_bar_b": {
+      "sprite512": {
+        "path": "sprites/snack_bar_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 59774
+      },
+      "sprite256": {
+        "path": "sprites-mobile/snack_bar_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 21686
+      }
+    },
+    "snack_bar_c": {
+      "sprite512": {
+        "path": "sprites/snack_bar_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 52912
+      },
+      "sprite256": {
+        "path": "sprites-mobile/snack_bar_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 18622
+      }
+    },
+    "usb_drive_a": {
+      "sprite512": {
+        "path": "sprites/usb_drive_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 67244
+      },
+      "sprite256": {
+        "path": "sprites-mobile/usb_drive_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 23212
+      }
+    },
+    "usb_drive_b": {
+      "sprite512": {
+        "path": "sprites/usb_drive_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 67712
+      },
+      "sprite256": {
+        "path": "sprites-mobile/usb_drive_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 23052
+      }
+    },
+    "usb_drive_c": {
+      "sprite512": {
+        "path": "sprites/usb_drive_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 37200
+      },
+      "sprite256": {
+        "path": "sprites-mobile/usb_drive_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 13060
+      }
+    },
+    "vr_headset_a": {
+      "sprite512": {
+        "path": "sprites/vr_headset_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 83754
+      },
+      "sprite256": {
+        "path": "sprites-mobile/vr_headset_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 28066
+      }
+    },
+    "vr_headset_b": {
+      "sprite512": {
+        "path": "sprites/vr_headset_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 85370
+      },
+      "sprite256": {
+        "path": "sprites-mobile/vr_headset_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 28816
+      }
+    },
+    "vr_headset_c": {
+      "sprite512": {
+        "path": "sprites/vr_headset_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 83678
+      },
+      "sprite256": {
+        "path": "sprites-mobile/vr_headset_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 29334
+      }
+    },
+    "wifi_router_a": {
+      "sprite512": {
+        "path": "sprites/wifi_router_a.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 73188
+      },
+      "sprite256": {
+        "path": "sprites-mobile/wifi_router_a.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 24298
+      }
+    },
+    "wifi_router_b": {
+      "sprite512": {
+        "path": "sprites/wifi_router_b.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 74686
+      },
+      "sprite256": {
+        "path": "sprites-mobile/wifi_router_b.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 24770
+      }
+    },
+    "wifi_router_c": {
+      "sprite512": {
+        "path": "sprites/wifi_router_c.webp",
+        "width": 512,
+        "height": 512,
+        "bytes": 65842
+      },
+      "sprite256": {
+        "path": "sprites-mobile/wifi_router_c.webp",
+        "width": 256,
+        "height": 256,
+        "bytes": 22626
+      }
+    },
+    "tap-to-crack": {
+      "ui": {
+        "path": "ui/tap-to-crack.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 115004
+      }
+    },
+    "badge": {
+      "ui": {
+        "path": "ui/badge.webp",
+        "width": 512,
+        "height": 502,
+        "bytes": 97306
+      }
+    },
+    "badge-small": {
+      "badge-small": {
+        "path": "ui/badge-small.webp",
+        "width": 192,
+        "height": 188,
+        "bytes": 19224
+      }
+    },
+    "chase": {
+      "card-detail": {
+        "path": "cards/chase.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 651990
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/chase.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 60602
+      }
+    },
+    "bowl-front": {
+      "egg-state": {
+        "path": "egg-states/bowl-front.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 40074
+      }
+    },
+    "bowl-rear": {
+      "egg-state": {
+        "path": "egg-states/bowl-rear.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 12810
+      }
+    },
+    "cap-front": {
+      "egg-state": {
+        "path": "egg-states/cap-front.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 31836
+      }
+    },
+    "cap-rear": {
+      "egg-state": {
+        "path": "egg-states/cap-rear.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 14240
+      }
+    },
+    "egg-00-intact": {
+      "egg-state": {
+        "path": "egg-states/egg-00-intact.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 81258
+      }
+    },
+    "egg-01-hairline": {
+      "egg-state": {
+        "path": "egg-states/egg-01-hairline.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 84472
+      }
+    },
+    "egg-02-deep-crack": {
+      "egg-state": {
+        "path": "egg-states/egg-02-deep-crack.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 88188
+      }
+    },
+    "egg-03-open": {
+      "egg-state": {
+        "path": "egg-states/egg-03-open.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 92820
+      }
+    },
+    "shell-cap": {
+      "egg-state": {
+        "path": "egg-states/shell-cap.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 44016
+      }
+    },
+    "shell-front": {
+      "egg-state": {
+        "path": "egg-states/shell-front.webp",
+        "width": 512,
+        "height": 640,
+        "bytes": 50050
+      }
+    },
+    "egg": {
+      "ui": {
+        "path": "ui/egg.webp",
+        "width": 427,
+        "height": 512,
+        "bytes": 70792
+      }
+    },
+    "henry-gold": {
+      "card-detail": {
+        "path": "cards/henry-gold.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 743032
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/henry-gold.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 65404
+      }
+    },
+    "henry": {
+      "card-detail": {
+        "path": "cards/henry.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 624044
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/henry.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 56552
+      }
+    },
+    "isabella": {
+      "card-detail": {
+        "path": "cards/isabella.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 646546
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/isabella.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 57046
+      }
+    },
+    "jack": {
+      "card-detail": {
+        "path": "cards/jack.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 647466
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/jack.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 57370
+      }
+    },
+    "logo": {
+      "ui": {
+        "path": "ui/logo.webp",
+        "width": 936,
+        "height": 1024,
+        "bytes": 641746
+      }
+    },
+    "mateo-gold": {
+      "card-detail": {
+        "path": "cards/mateo-gold.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 740900
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/mateo-gold.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 65412
+      }
+    },
+    "mateo": {
+      "card-detail": {
+        "path": "cards/mateo.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 634264
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/mateo.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 55854
+      }
+    },
+    "olivia": {
+      "card-detail": {
+        "path": "cards/olivia.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 651482
+      },
+      "card-thumbnail": {
+        "path": "cards-thumbnails/olivia.webp",
+        "width": 192,
+        "height": 288,
+        "bytes": 58866
+      }
+    },
+    "gamer-setup": {
+      "atlas512": {
+        "path": "atlas/gamer-setup.webp",
+        "width": 3072,
+        "height": 3072,
+        "bytes": 3008266
+      },
+      "atlas256": {
+        "path": "atlas-mobile/gamer-setup.webp",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 983672
+      }
+    },
+    "street-food": {
+      "atlas512": {
+        "path": "atlas/street-food.webp",
+        "width": 1536,
+        "height": 2560,
+        "bytes": 321602
+      },
+      "atlas256": {
+        "path": "atlas-mobile/street-food.webp",
+        "width": 768,
+        "height": 1280,
+        "bytes": 140504
+      },
+      "note": "wgc-food-assets 5 Nov: 512px sheet ships and loads via the merged multiatlas (atlas/wgc-items.json). The 256px sheet is shipped but NOT loaded \u2014 platform switch is a coordinator decision."
+    }
+  },
+  "cards": [
+    "chase",
+    "henry-gold",
+    "henry",
+    "isabella",
+    "jack",
+    "mateo-gold",
+    "mateo",
+    "olivia"
+  ],
+  "ui": [
+    "tap-to-crack",
+    "badge",
+    "egg",
+    "logo"
+  ],
+  "eggStates": [
+    "bowl-front",
+    "bowl-rear",
+    "cap-front",
+    "cap-rear",
+    "egg-00-intact",
+    "egg-01-hairline",
+    "egg-02-deep-crack",
+    "egg-03-open",
+    "shell-cap",
+    "shell-front"
+  ],
+  "eggAnimation": {
+    "alignment": "egg-states/alignment.json",
+    "canvas": {
+      "width": 512,
+      "height": 640
+    },
+    "pivot": {
+      "x": 256,
+      "y": 560
+    },
+    "frames": [
+      "egg-00-intact",
+      "egg-01-hairline",
+      "egg-02-deep-crack",
+      "egg-03-open"
+    ],
+    "pieces": [
+      "cap-rear",
+      "cap-front",
+      "bowl-rear",
+      "bowl-front"
+    ]
+  },
+  "atlases": {
+    "standard": "atlas/gamer-setup.json",
+    "mobile": "atlas-mobile/gamer-setup.json"
+  },
+  "loading": "Choose an atlas OR individual sprites; do not load both. Card detail and thumbnail are separate lazy-load variants. Egg frames retain the complete aligned canvas and common pivot; do not trim or recenter."
+}
