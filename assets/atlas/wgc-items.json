@@ -3061,6 +3061,6 @@
   "meta": {
     "app": "scripts/build-items-atlas.mjs",
     "note": "Merged multiatlas: one texture key, frames span every sheet.",
-    "generated": "2026-11-09"
+    "generated": "2026-11-10"
   }
 }
