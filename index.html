@@ -867,6 +867,15 @@
     .wgc-egg-cue-hand { width: 42%; height: auto; display: block; margin-top: -12%; margin-left: 10%; filter: drop-shadow(0 6px 10px rgba(0,0,0,.5)); animation: wgc-hand-tap .88s ease-in-out infinite; }
     @keyframes wgc-cue-bob { 0%, 100% { transform: translateY(0) rotate(-2.3deg) scale(1); } 50% { transform: translateY(-9px) rotate(-2.3deg) scale(1.05); } }
     @keyframes wgc-hand-tap { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-8px, 12px) scale(0.94); } }
+    .wgc-egg-vibrate { animation: wgc-egg-wiggle 0.95s ease-in-out infinite; }
+    @keyframes wgc-egg-wiggle {
+      0%, 58%, 100% { transform: rotate(0deg) scale(1); }
+      65% { transform: rotate(-4.5deg) scale(1.03); }
+      72% { transform: rotate(4.5deg) scale(1.04); }
+      79% { transform: rotate(-3.5deg) scale(1.03); }
+      86% { transform: rotate(3deg) scale(1.02); }
+      93% { transform: rotate(-1.5deg) scale(1.01); }
+    }
 
     .overlay {
       position: fixed; inset: 0; z-index: 9000;
@@ -1144,7 +1153,7 @@
       padding-top: 2px !important;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-BoCFWnGZ.js"></script>
+  <script type="module" crossorigin src="./assets/index-CZINsmOq.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BLyVeo-2.css">
 </head>
 <body>
