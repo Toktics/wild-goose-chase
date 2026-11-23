@@ -175,6 +175,38 @@
     }
     #listticket.all-done { border-color: #16a34a; box-shadow: 0 5px 0 #15803d, 0 0 20px rgba(34,197,94,.45); }
     #listticket.all-done #ticketcta { display: block; }
+    #listticket.goose-hunt {
+      border-color: #d97706;
+      box-shadow: 0 5px 0 #78350f, 0 0 22px rgba(250, 204, 21, 0.55);
+    }
+    #listticket.goose-hunt .ticket-head {
+      background: linear-gradient(180deg, #fde047 0%, #f59e0b 100%);
+      color: #451a03;
+      text-shadow: 0 1px 0 rgba(255,255,255,.55);
+    }
+    .chip.chip--egg {
+      background: linear-gradient(90deg, rgba(254, 240, 138, 0.88) 0%, rgba(253, 224, 71, 0.55) 100%);
+      border: 1.8px solid #d97706;
+      padding: 3px 4px;
+      margin-top: 2px;
+      box-shadow: 0 0 10px rgba(250, 204, 21, 0.45);
+    }
+    .chip.chip--egg .chip-name { color: #78350f; font-weight: 900; }
+    .chip.chip--egg.done { opacity: 1; }
+    .chip.chip--egg.done .chip-name { text-decoration: none; color: #78350f; }
+    .chip.chip--egg.done .chip-check {
+      background: linear-gradient(180deg, #fbbf24, #d97706);
+      border-color: #78350f;
+      color: #fff;
+    }
+    .chip.chip--egg.egg-flash {
+      animation: eggRowPop .55s cubic-bezier(.18,1.5,.32,1);
+    }
+    @keyframes eggRowPop {
+      0% { transform: scale(0.75); box-shadow: 0 0 0 rgba(250,204,21,0); }
+      45% { transform: scale(1.16); box-shadow: 0 0 22px rgba(250,204,21,0.95); }
+      100% { transform: scale(1); box-shadow: 0 0 10px rgba(250,204,21,0.45); }
+    }
     #eggbadge {
       display: none; margin: 4px 7px 6px; padding: 4px 6px; border-radius: 9px;
       background: linear-gradient(180deg, #fde047 0%, #f59e0b 100%);
@@ -185,6 +217,23 @@
     }
     #listticket.has-egg #eggbadge { display: block; }
     @keyframes eggPulse { from { transform: scale(1); } to { transform: scale(1.04); } }
+    .fly-golden-egg {
+      position: fixed; z-index: 62; pointer-events: none;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,251,210,0.95) 0%, rgba(253,224,71,0.68) 46%, rgba(245,158,11,0) 74%);
+      filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.95)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.45));
+      will-change: transform, opacity;
+    }
+    .egg-trolley-halo {
+      position: fixed; z-index: 59; pointer-events: none;
+      width: 96px; height: 96px; border-radius: 50%;
+      border: 4px solid #fde047;
+      box-shadow: 0 0 28px rgba(255, 215, 0, 0.95), inset 0 0 18px rgba(255, 240, 150, 0.75);
+      transform: translate(-50%, -50%) scale(0.35);
+      opacity: 0;
+      will-change: transform, opacity;
+    }
 
     /* Top-centre: Glossy Navy Stopwatch Bar with Lime-Green Fill (Artist Impression!) */
     #timerwrap {
@@ -470,13 +519,13 @@
     }
     .brand-core-flash {
       position: absolute; left: 50%; top: 50%;
-      width: min(46vmin, 300px); height: min(46vmin, 300px);
+      width: min(36vmin, 240px); height: min(36vmin, 240px);
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 248, 200, 0.95) 0%, rgba(255, 210, 60, 0.80) 34%, rgba(12, 16, 26, 0.62) 64%, transparent 76%);
+      background: radial-gradient(circle, rgba(255, 250, 215, 0.88) 0%, rgba(255, 212, 68, 0.62) 38%, rgba(12, 16, 26, 0.32) 66%, transparent 76%);
       transform: translate3d(-50%, -50%, 0) scale(0);
       opacity: 0; visibility: hidden;
       will-change: transform, opacity;
-      animation: brand-core-flash .56s 1.48s cubic-bezier(.16, 1, .3, 1) forwards;
+      animation: brand-core-flash .32s 1.50s cubic-bezier(.16, 1, .3, 1) forwards;
     }
     .brand-sparkle {
       position: absolute; left: 50%; top: 50%;
@@ -484,10 +533,10 @@
       background: var(--sp-bg);
       clip-path: var(--sp-clip);
       filter: var(--sp-glow);
-      transform: translate3d(-50%, -50%, 0) scale(0);
+      transform: translate3d(calc(-50% + var(--sp-start-x, 0px)), calc(-50% + var(--sp-start-y, 0px)), 0) scale(0);
       opacity: 0; visibility: hidden;
       will-change: transform, opacity;
-      animation: brand-sparkle var(--sp-dur, .72s) var(--sp-delay, 1.50s) cubic-bezier(.16, 1, .3, 1) forwards;
+      animation: brand-sparkle .72s 1.50s cubic-bezier(.16, 1, .3, 1) forwards;
     }
     @keyframes brand-arrive-shake {
       0%   { transform: translate3d(0, 0, 0) scale(.76) rotate(-1.5deg); opacity: 0; animation-timing-function: cubic-bezier(.22, 1.22, .36, 1); }
@@ -513,14 +562,14 @@
       100% { visibility: visible; transform: translate3d(var(--burst-x), var(--burst-y), 0) rotate(var(--burst-turn)) scale(.74); opacity: 0; }
     }
     @keyframes brand-core-flash {
-      0% { visibility: visible; transform: translate3d(-50%, -50%, 0) scale(.15); opacity: 0; }
-      22% { opacity: 1; transform: translate3d(-50%, -50%, 0) scale(1.06); }
-      100% { visibility: visible; transform: translate3d(-50%, -50%, 0) scale(1.90); opacity: 0; }
+      0% { visibility: visible; transform: translate3d(-50%, -50%, 0) scale(.3); opacity: .88; }
+      28% { opacity: .82; transform: translate3d(-50%, -50%, 0) scale(1.12); }
+      100% { visibility: visible; transform: translate3d(-50%, -50%, 0) scale(1.65); opacity: 0; }
     }
     @keyframes brand-sparkle {
-      0% { visibility: visible; transform: translate3d(-50%, -50%, 0) scale(.15) rotate(0deg); opacity: 0; }
-      18% { opacity: 1; transform: translate3d(calc(-50% + var(--sp-mid-x)), calc(-50% + var(--sp-mid-y)), 0) scale(1.20) rotate(var(--sp-rot-mid)); }
-      58% { opacity: 1; }
+      0% { visibility: visible; transform: translate3d(calc(-50% + var(--sp-start-x, 0px)), calc(-50% + var(--sp-start-y, 0px)), 0) scale(.42) rotate(0deg); opacity: 1; }
+      22% { opacity: 1; transform: translate3d(calc(-50% + var(--sp-mid-x)), calc(-50% + var(--sp-mid-y)), 0) scale(1.18) rotate(var(--sp-rot-mid)); }
+      62% { opacity: 1; }
       100% { visibility: visible; transform: translate3d(calc(-50% + var(--sp-x)), calc(-50% + var(--sp-y)), 0) scale(.18) rotate(var(--sp-rot)); opacity: 0; }
     }
     @keyframes brand-clear { 0%, 74% { opacity: 1; } 100% { opacity: 0; } }
@@ -864,21 +913,42 @@
     }
     .fail-art img {
       max-width: 100%; max-height: 100%; object-fit: contain; position: relative; z-index: 1;
+      transform-origin: 50% 88%;
       filter: drop-shadow(0 8px 16px rgba(0,0,0,0.58));
-      animation: failBob 2.4s ease-in-out infinite;
+      animation: failGooseMock 1.35s ease-in-out infinite;
     }
-    @keyframes failBob {
-      0%, 100% { transform: translateY(0) rotate(-2deg); }
-      50% { transform: translateY(-7px) rotate(3deg); }
+    @keyframes failGooseMock {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(-3deg); }
+      14% { transform: translateY(5px) scale(1.08, 0.92) rotate(-6deg); }
+      30% { transform: translateY(-14px) scale(0.95, 1.07) rotate(6deg); }
+      46% { transform: translateY(3px) scale(1.06, 0.94) rotate(-5deg); }
+      62% { transform: translateY(-10px) scale(0.96, 1.05) rotate(7deg); }
+      78% { transform: translateY(2px) scale(1.04, 0.96) rotate(-4deg); }
+    }
+    .fail-honk-pop {
+      position: absolute; z-index: 2; pointer-events: none;
+      font-family: Impact, 'Arial Narrow', Arial, sans-serif;
+      font-size: 16px; letter-spacing: 1px; color: #ffe066;
+      background: #0d1c33; border: 2px solid #ffe066; border-radius: 999px;
+      padding: 2px 8px; box-shadow: 0 3px 0 #081222;
+      opacity: 0;
+    }
+    .fail-honk-pop.h1 { right: -18px; top: 8px; animation: failHonkPop 1.35s 0.18s ease-out infinite; }
+    .fail-honk-pop.h2 { left: -14px; top: 24px; font-size: 14px; color: #fff; border-color: #ff6b6b; animation: failHonkPop 1.35s 0.62s ease-out infinite; }
+    @keyframes failHonkPop {
+      0%, 10% { opacity: 0; transform: translate(0, 6px) scale(0.45) rotate(-10deg); }
+      28% { opacity: 1; transform: translate(4px, -6px) scale(1.12) rotate(6deg); }
+      62% { opacity: 1; transform: translate(8px, -14px) scale(0.98) rotate(10deg); }
+      100% { opacity: 0; transform: translate(12px, -22px) scale(0.7) rotate(14deg); }
     }
     .fail-actions {
-      display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; width: 100%;
     }
     .fail-btn {
-      height: 58px; padding: 0 28px; border-radius: 16px; border: 3.5px solid #081222;
+      height: 58px; padding: 0 24px; border-radius: 16px; border: 3.5px solid #081222;
       box-shadow: 0 6px 0 #081222, 0 12px 24px rgba(0,0,0,0.45), inset 0 2.5px 0 rgba(255,255,255,0.65);
       font-family: Impact, 'Arial Narrow', Arial, sans-serif;
-      font-size: 22px; letter-spacing: 1.4px; cursor: pointer; text-transform: uppercase;
+      font-size: clamp(17px, 4.4vw, 22px); letter-spacing: 1.2px; cursor: pointer; text-transform: uppercase;
       transition: transform 0.1s cubic-bezier(.34,1.56,.64,1), filter 0.12s ease;
       white-space: nowrap;
     }
@@ -889,6 +959,12 @@
       color: #081222;
       text-shadow: 0 1px 0 rgba(255,255,255,0.55);
     }
+    .fail-btn.skip {
+      background: linear-gradient(180deg, #d8ff36 0%, #84cc16 100%);
+      color: #081222;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    }
+    .fail-btn[hidden] { display: none; }
     .fail-hatchery-badge {
       background: transparent; border: none; padding: 0; cursor: pointer;
       display: grid; place-items: center;
@@ -911,7 +987,7 @@
     }
     #checkoutcard.show { display: flex; }
     .checkout-inner {
-      width: min(380px, 92vw);
+      width: min(440px, 94vw);
       display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px;
       animation: victoryTitlePop .36s cubic-bezier(.18,1.35,.35,1) both;
     }
@@ -935,12 +1011,13 @@
       font-size: 46px; letter-spacing: 1px; color: #ffe066;
       text-shadow: 0 3px 0 #081222;
     }
-    .checkout-actions { display: flex; gap: 12px; width: 100%; margin-top: 4px; }
+    .checkout-actions { display: flex; flex-direction: column; gap: 10px; width: 100%; margin-top: 4px; }
     .ck-btn {
-      flex: 1; height: 54px; border-radius: 15px; border: 3px solid #081222;
+      width: 100%; min-height: 54px; padding: 8px 16px; border-radius: 15px; border: 3px solid #081222;
       box-shadow: 0 5px 0 #081222, inset 0 2px 0 rgba(255,255,255,.45);
       font-family: Impact, 'Arial Narrow', Arial, sans-serif;
-      font-size: 20px; letter-spacing: 1px; cursor: pointer; text-transform: uppercase;
+      font-size: clamp(16px, 4.2vw, 20px); letter-spacing: 1px; cursor: pointer; text-transform: uppercase;
+      line-height: 1.15;
     }
     .ck-btn.retry { background: linear-gradient(180deg, #ffe047, #f59e0b); color: #081222; }
     .ck-btn.next { background: linear-gradient(180deg, #d8ff36, #7fc400); color: #081222; }
@@ -1305,7 +1382,7 @@
       padding-top: 2px !important;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-BnFpTfLr.js"></script>
+  <script type="module" crossorigin src="./assets/index-BaikemzV.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BLyVeo-2.css">
 </head>
 <body>
@@ -1450,10 +1527,13 @@
         </div>
         <div class="fail-art">
           <img src="assets/ui/goose-times-up-384.webp" srcset="assets/ui/goose-times-up.webp 2x" alt="Escaped Goose" draggable="false" />
+          <span class="fail-honk-pop h1" aria-hidden="true">HONK!</span>
+          <span class="fail-honk-pop h2" aria-hidden="true">HA!</span>
         </div>
         <div id="cardtitle" class="fail-badge">THE GOOSE ESCAPED!</div>
         <div class="fail-actions">
           <button id="failretrybtn" class="fail-btn retry">TRY AGAIN ↺</button>
+          <button id="failskipbtn" class="fail-btn skip" hidden>SKIP → NEXT LEVEL</button>
           <button id="failhatcherybtn" class="fail-hatchery-badge" type="button" aria-label="The Hatchery">
             <img src="assets/ui/hatchery-384.webp" srcset="assets/ui/hatchery-768.webp 2x" alt="THE HATCHERY" draggable="false" />
           </button>
@@ -1461,7 +1541,7 @@
       </div>
     </div>
 
-    <!-- Clean Floating Checkout Celebration (Coins earned, NO egg -> Retry or Next Level) -->
+    <!-- Clean Floating Checkout Celebration (Coins earned, NO egg -> Retry for Egg or Next Level) -->
     <div id="checkoutcard"><div class="checkout-inner">
       <div class="checkout-title">CHECKED OUT!</div>
       <div class="checkout-hero-coin">
@@ -1469,8 +1549,8 @@
         <span id="checkouttotal">+30</span>
       </div>
       <div class="checkout-actions">
-        <button id="ckretrybtn" class="ck-btn retry">RETRY 🪿</button>
-        <button id="cknextbtn" class="ck-btn next">NEXT LEVEL ›</button>
+        <button id="ckretrybtn" class="ck-btn retry">🥚 CATCH THE GOOSE! (RETRY FOR EGG)</button>
+        <button id="cknextbtn" class="ck-btn next">NEXT LEVEL →</button>
       </div>
     </div></div>
   </div>
