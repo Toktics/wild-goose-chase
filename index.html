@@ -91,8 +91,13 @@
     #listticket.compact .chip-ico { width: 22px; height: 22px; }
     #listticket.compact .chip-ico-img { width: 22px; height: 22px; }
     #listticket.compact .chip-check { width: 18px; height: 18px; }
-    #listticket.compact #ticketcta { font-size: 9px; padding: 4px 2px; letter-spacing: 0.3px; }
-    #listticket.compact #eggbadge { font-size: 9px; margin: 3px 4px 5px; padding: 3px 2px; letter-spacing: 0.2px; }
+    #listticket.compact #ticketcta {
+      font-size: 0; padding: 4px 2px; line-height: 1.2;
+    }
+    #listticket.compact #ticketcta::after {
+      content: "GO! →"; font-size: 11px; font-weight: 900; letter-spacing: 0.4px;
+    }
+    #listticket.compact #eggbadge { display: none !important; }
     /* Cute golden-yellow clipboard top clip */
     .ticket-clip {
       position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
@@ -1377,7 +1382,7 @@
       padding-top: 2px !important;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-7ZQwtuEt.js"></script>
+  <script type="module" crossorigin src="./assets/index-BScCwEzP.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BLyVeo-2.css">
 </head>
 <body>
