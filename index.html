@@ -69,6 +69,7 @@
       overflow: visible;
       pointer-events: auto;
       cursor: pointer;
+      transition: width 220ms cubic-bezier(0.22, 1, 0.36, 1), transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
       -webkit-tap-highlight-color: transparent;
     }
     /* Slim side-guide mode (auto-collapses after level starts on mobile; tap anytime to toggle!) */
@@ -1319,15 +1320,15 @@
     }
     .wgc-detail-cardbox.is-landscape {
       aspect-ratio: 3 / 2 !important;
-      width: min(92vw, 620px) !important;
+      width: min(92vw, 620px, calc(66vh * 1.5)) !important;
       height: auto !important;
       max-height: 72vh !important;
     }
     .reward-card.is-landscape {
       aspect-ratio: 3 / 2 !important;
-      width: min(92vw, 520px) !important;
+      width: min(92vw, 520px, calc(46vh * 1.5)) !important;
       height: auto !important;
-      max-height: 55vh !important;
+      max-height: 100% !important;
     }
     .wgc-reverse--holo {
       aspect-ratio: 3 / 2 !important;
@@ -1382,7 +1383,7 @@
       padding-top: 2px !important;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-D_A3tSUb.js"></script>
+  <script type="module" crossorigin src="./assets/index-CYicrJaL.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BLyVeo-2.css">
 </head>
 <body>
