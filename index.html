@@ -4,27 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
   <title>Wild Goose Chase</title>
-  <!-- Shared Snappy Fox Games analytics for this GitHub Pages demo only. -->
-  <script>
-    (function () {
-      if (location.hostname !== "toktics.github.io" ||
-          !/^\/wild-goose-chase(?:\/|$)/.test(location.pathname)) return;
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag("js", new Date());
-      window.gtag("config", "G-BDZ8P5QJR3", {
-        game_id: "wild-goose-chase",
-        build_profile: "standalone",
-        send_page_view: true,
-        allow_google_signals: false,
-        allow_ad_personalization_signals: false
-      });
-      var tag = document.createElement("script");
-      tag.async = true;
-      tag.src = "https://www.googletagmanager.com/gtag/js?id=G-BDZ8P5QJR3";
-      document.head.appendChild(tag);
-    })();
-  </script>
   <script src="https://game-cdn.poki.com/scripts/v2/poki-sdk.js"></script>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
@@ -301,7 +280,7 @@
     /* Top-right: Glossy Navy Coin Capsule with Oversized Goose Gold Coin (Artist Impression!) */
     #toprightbar {
       position: fixed; right: max(14px, env(safe-area-inset-right)); top: max(13px, env(safe-area-inset-top));
-      display: flex; align-items: center; pointer-events: auto; z-index: 20;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 6px; pointer-events: none; z-index: 20;
     }
     #coinpill {
       position: relative; height: 38px; min-width: 106px;
@@ -309,10 +288,44 @@
       background: linear-gradient(180deg, #1b3152 0%, #0d1c33 100%);
       border: 2.5px solid #081222; border-radius: 999px; padding: 0 16px 0 44px;
       box-shadow: 0 4px 0 #081222, 0 7px 16px rgba(0,0,0,.32), inset 0 0 0 2px rgba(255,255,255,.78);
-      transition: transform .14s cubic-bezier(.34,1.56,.64,1);
+      transition: transform .14s cubic-bezier(.34,1.56,.64,1), box-shadow .22s ease;
+      pointer-events: auto; cursor: pointer;
     }
+    #coinpill:active { transform: translateY(2px) scale(.97); }
     #coinpill.coin-bump { animation: coin-pill-bump .26s cubic-bezier(.34,1.56,.64,1); }
+    #coinpill.upgrade-ready {
+      box-shadow: 0 4px 0 #081222, 0 0 18px rgba(255, 217, 77, 0.85), inset 0 0 0 2px #fde047;
+      animation: coin-upgrade-glow 1.8s ease-in-out infinite;
+    }
+    #coinpill.upgrade-ready.coin-bump { animation: coin-pill-bump .26s cubic-bezier(.34,1.56,.64,1); }
     @keyframes coin-pill-bump { 0% { transform: scale(1); } 45% { transform: scale(1.16); } 100% { transform: scale(1); } }
+    @keyframes coin-upgrade-glow {
+      0%, 100% { box-shadow: 0 4px 0 #081222, 0 0 12px rgba(255, 217, 77, 0.65), inset 0 0 0 2px #fde047; }
+      50% { box-shadow: 0 4px 0 #081222, 0 0 24px rgba(255, 217, 77, 1), inset 0 0 0 2px #fff7b2; }
+    }
+    #coinupgradedot {
+      position: absolute; top: -6px; right: -4px;
+      width: 19px; height: 19px; border-radius: 999px;
+      display: none; place-items: center;
+      background: linear-gradient(180deg, #d8ff36 0%, #84cc16 100%);
+      border: 2px solid #081222; color: #081222;
+      font: 900 12px/1 system-ui, sans-serif;
+      box-shadow: 0 2px 6px rgba(0,0,0,.45);
+      pointer-events: none;
+    }
+    #coinpill.upgrade-ready #coinupgradedot { display: grid; }
+    #coinupgradetoast {
+      padding: 4px 10px; border-radius: 999px;
+      background: linear-gradient(180deg, #1b3152 0%, #0d1c33 100%);
+      border: 2px solid #fde047;
+      box-shadow: 0 4px 12px rgba(0,0,0,.45), 0 0 12px rgba(255, 217, 77, 0.55);
+      color: #fde047; font-family: Impact, 'Arial Narrow', Arial, sans-serif;
+      font-size: 13px; letter-spacing: .8px; white-space: nowrap;
+      opacity: 0; transform: translateY(-4px) scale(.92);
+      transition: opacity .22s ease, transform .22s cubic-bezier(.34,1.56,.64,1);
+      pointer-events: none;
+    }
+    #coinupgradetoast.show { opacity: 1; transform: translateY(0) scale(1); }
     #coinpill img {
       position: absolute; left: -12px; top: 50%; transform: translateY(-50%);
       width: 48px; height: 48px; object-fit: contain; display: block;
@@ -338,6 +351,8 @@
       #toprightbar { right: max(8px, env(safe-area-inset-right)); top: max(10px, env(safe-area-inset-top)); }
       #coinpill { height: 30px; min-width: 68px; padding: 0 9px 0 30px; border-width: 2px; box-shadow: 0 3px 0 #081222, inset 0 0 0 1.5px rgba(255,255,255,.78); }
       #coinpill img { width: 34px; height: 34px; left: -8px; }
+      #coinupgradedot { width: 16px; height: 16px; font-size: 10px; top: -5px; right: -3px; }
+      #coinupgradetoast { font-size: 11px; padding: 3px 8px; }
       #coincount { font-size: 15px; }
       #listticket { width: 144px; }
       #listticket.compact { width: 64px; }
@@ -1404,7 +1419,7 @@
       padding-top: 2px !important;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-CYicrJaL.js"></script>
+  <script type="module" crossorigin src="./assets/index-DQjAJwIS.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BLyVeo-2.css">
 </head>
 <body>
@@ -1445,10 +1460,12 @@
 
     <!-- Top-right: Glossy Navy Coin Capsule + Oversized Goose Gold Coin -->
     <div id="toprightbar">
-      <div id="coinpill" aria-label="Goose Gold Coins">
+      <button id="coinpill" type="button" aria-label="Goose Gold Coins and Upgrades">
         <img src="assets/ui/goose-coin.webp" alt="" draggable="false" />
         <span id="coincount">0</span>
-      </div>
+        <span id="coinupgradedot" aria-hidden="true">↑</span>
+      </button>
+      <div id="coinupgradetoast" aria-live="polite">UPGRADE READY!</div>
     </div>
 
     <div id="tutiris"><div id="tutiris-ring"></div></div>
